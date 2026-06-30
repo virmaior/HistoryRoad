@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History Road</title>
+    <link rel="stylesheet" href="./public/history-road.css">
+</head>
+<body>
+    <div id="road-container" class="history-road-container"></div>
+
+    <script type="module" src="./dist/main.js"></script>
+
+    <script src="sample.js"></script>
+    <script >
+
+        // Wait for the page and modules to fully load, then execute
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof window.initializeHistoryRoad === 'function') {
+                window.initializeHistoryRoad(historyRoadJson,config);
+            } else {
+                console.error("The HistoryRoad module initialization function was not found.");
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+
+    /* Strictness flags to catch bugs early */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true, // Essential since you are using | null
+
+    /* Module Resolution */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Where to put the compiled JavaScript files */
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  /* Tell TypeScript which folders to watch and which to ignore */
+  "include": ["src/**/*", "dist/data.js"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
