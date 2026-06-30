@@ -231,3 +231,6 @@ It also does okay with printing now due to event trapping that redoes the SVG be
 * The CSS defaults to a flying squirrel brown pallette like the brushes. There are also options for red, blue, gray, and green.
 * There's no WYSIWYG editing.
 * The lines choices are not fully functional.
+
+# Screenshot
+<img width="6144" height="3323" alt="sample" src="https://github.com/user-attachments/assets/ba91dfd8-4933-4bcf-a7ba-d3e9bc3d7e68" />
